@@ -7,7 +7,7 @@ Member | Email | Photo
 --- | --- | ---
 Elan Halpern | elanh@stanford.edu | <img src="https://imgur.com/fwznqUz" alt="Elan Halpern" width="157.5" height="157.5">
 Isha Kumar | ishkumar@stanford.edu | <img src="https://imgur.com/U20ueQx" alt="Isha Kumar" width="157.5" height="157.5">
-John Kamalu | jkamalu@stanford.edu | <img src="https://i.imgur.com/pebY6bg.jpg" alt="John Kamalu" width="157.5" height="201">
+Erin McCoy | emccoy@stanford.edu | <img src="" >
 Sarah Tollman  | stollman@stanford.edu | <img src="https://i.imgur.com/2RB416X.jpg" alt="Sarah Tollman" width="157.5" height="164.4">
 Alan Flores-Lopez | alanf94@stanford.edu | <img src="https://i.imgur.com/y6WLV1M.jpg" alt="Alan Flores-Lopez" width="157.5" height="210">
 
