@@ -5,8 +5,8 @@ Check out our [team song](https://open.spotify.com/track/6wDviYDtmSDZ0S6TVMM9Vc?
 # Team Members
 Member | Email | Photo
 --- | --- | ---
-Elan Halpern | elanh@stanford.edu | <img src="https://imgur.com/fwznqUz" alt="Elan Halpern" width="157.5" height="157.5">
-Isha Kumar | ishkumar@stanford.edu | <img src="https://i.imgur.com/qpkakAD.jpg" alt="Isha Kumar" width="157.5" height="157.5">
+Elan Halpern | elanh@stanford.edu | <img <a href="//imgur.com/a/NogYhMf"></a> alt="Elan Halpern" width="157.5" height="157.5">
+Pratyaksh (Praty) Sharma | praty@stanford.edu | <img src="https://i.imgur.com/qpkakAD.jpg" alt="Praty Sharma" width="157.5" height="157.5">
 John Kamalu | jkamalu@stanford.edu | <img src="https://i.imgur.com/pebY6bg.jpg" alt="John Kamalu" width="157.5" height="201">
 Sarah Tollman  | stollman@stanford.edu | <img src="https://i.imgur.com/2RB416X.jpg" alt="Sarah Tollman" width="157.5" height="164.4">
 Alan Flores-Lopez | alanf94@stanford.edu | <img src="https://i.imgur.com/y6WLV1M.jpg" alt="Alan Flores-Lopez" width="157.5" height="210">
