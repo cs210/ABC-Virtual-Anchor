@@ -5,11 +5,10 @@ Check out our [team song](https://open.spotify.com/track/6wDviYDtmSDZ0S6TVMM9Vc?
 # Team Members
 Member | Email | Photo
 --- | --- | ---
-Elan Halpern | elanh@stanford.edu | <img src="https://imgur.com/fwznqUz" alt="Elan Halpern" width="157.5" height="157.5">
-Isha Kumar | ishkumar@stanford.edu | <img src="https://imgur.com/U20ueQx" alt="Isha Kumar" width="157.5" height="157.5">
+Elan Halpern | elanh@stanford.edu | <img src="https://i.imgur.com/fwznqUz.jpg" alt="Elan Halpern" width="157.5" height="157.5">
+Isha Kumar | ishkumar@stanford.edu | <img src="https://i.imgur.com/U20ueQx.jpg" alt="Isha Kumar" width="157.5" height="157.5">
 Erin McCoy | emccoy@stanford.edu | <img src="" >
-Sarah Tollman  | stollman@stanford.edu | <img src="https://i.imgur.com/2RB416X.jpg" alt="Sarah Tollman" width="157.5" height="164.4">
-Alan Flores-Lopez | alanf94@stanford.edu | <img src="https://i.imgur.com/y6WLV1M.jpg" alt="Alan Flores-Lopez" width="157.5" height="210">
+Sajana Weerawardhena  | sajana@stanford.edu | <img src="https://i.imgur.com/q5tthU0.png" alt="Sajana Weerawardhena" width="157.5" height="164.4">
 
 # Team Skills Matrix*:
 
@@ -18,8 +17,7 @@ Member | Hat | Technical Skills | Non-Technical Skills | Personal Traits | Desir
 Elan | Blue/White | Coding, backend, front-end | Leadership skills, organizing | Dedicated strongwilled, direct, organizer, reliable | Feel comfortable trying things I might not be good at|Can have high expectations, inflexible, difficulty expressing emotion
 Isha | Green & Yellow | Backend Engineering | UI Design, UX Research, Illustration | Creative, Insightful, Decisive, Determinate and Passionate | Project management | Can burn out, sensitive to other's moods and emotions
 John | Black/Yellow | Python, AI/ML, quick prototyping | Small-team work, international work environments | Planner, group-oriented, cautious | UI/UX research and design, security, AI/ML lifecycle | Presentation, prioritization, systems
-Sarah | Blue | Systems, networking, testing | Decision making, some project management, time management | Motivated, logical, direct | Embedded systems & cybersecurity / launching attacks | AI, can be too blunt
-Alan | Black | Python, systems design, systems security, some AI/deep learning | Facilitating groups, managing schedules and tasks | Precise, consistent, reliable, introverted, thinks of the larger picture | IoT security, applying deep learning, group dynamics, managing a budget | Can be fickle, sometimes hard to convince, introverted
+Sajana | Blue | Machine Learning, Programming, Backend | Big Picture thinker, Leadership skills | Curious, energetic, observant, Excellent communicator | Management skills| Difficultly focusing, stressed easily, independent to a fault
 
 *Strengths and weaknesses based on the Myers-Briggs personality types. 
 
