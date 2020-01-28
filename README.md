@@ -5,10 +5,10 @@ Check out our [team song](https://open.spotify.com/track/6wDviYDtmSDZ0S6TVMM9Vc?
 # Team Members
 Member | Email | Photo
 --- | --- | ---
-Elan Halpern | elanh@stanford.edu | <img src="https://i.imgur.com/fwznqUz.jpg" alt="Elan Halpern" width="157.5" height="157.5">
-Isha Kumar | ishkumar@stanford.edu | <img src="https://i.imgur.com/U20ueQx.jpg" alt="Isha Kumar" width="157.5" height="157.5">
+Elan Halpern | elanh@stanford.edu | <img src="https://i.imgur.com/fwznqUz.jpg" alt="Elan Halpern" >
+Isha Kumar | ishkumar@stanford.edu | <img src="https://i.imgur.com/U20ueQx.jpg" alt="Isha Kumar" >
 Erin McCoy | emccoy@stanford.edu | <img src="" >
-Sajana Weerawardhena  | sajana@stanford.edu | <img src="https://i.imgur.com/q5tthU0.png" alt="Sajana Weerawardhena" width="157.5" height="164.4">
+Sajana Weerawardhena  | sajana@stanford.edu | <img src="https://i.imgur.com/q5tthU0.png" alt="Sajana Weerawardhena" >
 
 # Team Skills Matrix*:
 
