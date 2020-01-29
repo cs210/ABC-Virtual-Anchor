@@ -7,7 +7,7 @@ Member | Email | Photo
 --- | --- | ---
 Elan Halpern | elanh@stanford.edu | <img src="https://i.imgur.com/fwznqUz.jpg" alt="Elan Halpern" >
 Isha Kumar | ishkumar@stanford.edu | <img src="https://i.imgur.com/U20ueQx.jpg" alt="Isha Kumar" >
-Erin McCoy | emccoy@stanford.edu | <img src="https://i.imgur.com/8uJf8NX.jpg" alt = "Erin McCoy >
+Erin McCoy | emccoy@stanford.edu | <img src="https://i.imgur.com/8uJf8NX.jpg" alt = "Erin McCoy" >
 Sajana Weerawardhena  | sajana@stanford.edu | <img src="https://i.imgur.com/q5tthU0.png" alt="Sajana Weerawardhena" >
 
 # Team Skills Matrix*:
