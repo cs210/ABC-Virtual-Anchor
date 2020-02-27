@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cs210/ABC-Virtual-Anchor/static/css/main.d1b05096.chunk.css",
+    "main.js": "/cs210/ABC-Virtual-Anchor/static/js/main.61770b65.chunk.js",
+    "main.js.map": "/cs210/ABC-Virtual-Anchor/static/js/main.61770b65.chunk.js.map",
+    "runtime-main.js": "/cs210/ABC-Virtual-Anchor/static/js/runtime-main.26d99dc4.js",
+    "runtime-main.js.map": "/cs210/ABC-Virtual-Anchor/static/js/runtime-main.26d99dc4.js.map",
+    "static/js/2.31c9ac99.chunk.js": "/cs210/ABC-Virtual-Anchor/static/js/2.31c9ac99.chunk.js",
+    "static/js/2.31c9ac99.chunk.js.map": "/cs210/ABC-Virtual-Anchor/static/js/2.31c9ac99.chunk.js.map",
+    "index.html": "/cs210/ABC-Virtual-Anchor/index.html",
+    "precache-manifest.b05333fa573fc696103c83137365714c.js": "/cs210/ABC-Virtual-Anchor/precache-manifest.b05333fa573fc696103c83137365714c.js",
+    "service-worker.js": "/cs210/ABC-Virtual-Anchor/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/cs210/ABC-Virtual-Anchor/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.31c9ac99.chunk.js.LICENSE.txt": "/cs210/ABC-Virtual-Anchor/static/js/2.31c9ac99.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/cs210/ABC-Virtual-Anchor/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26d99dc4.js",
+    "static/js/2.31c9ac99.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.61770b65.chunk.js"
+  ]
+}
