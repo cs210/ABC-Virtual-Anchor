@@ -16,8 +16,7 @@ Member | Hat | Technical Skills | Non-Technical Skills | Personal Traits | Desir
 --- | --- | --- | --- | --- | --- | ---
 Elan | Blue/White | Coding, backend, front-end | Leadership skills, organizing | Dedicated strongwilled, direct, organizer, reliable | Feel comfortable trying things I might not be good at|Can have high expectations, inflexible, difficulty expressing emotion
 Isha | Green & Yellow | Backend Engineering | UI Design, UX Research, Illustration | Creative, Insightful, Decisive, Determinate and Passionate | Project management | Can burn out, sensitive to other's moods and emotions
-Erin | Green | Backend, frontend | UX Research, design thinking process | Excellent communicator, energetic, observant, curious |Working with a team, comfort with experimenting
- | Difficultly focusing, stressed easily, independent to a fault
+Erin | Green | Backend, frontend | UX Research, design thinking process | Excellent communicator, energetic, observant, curious |Working with a team, comfort with experimenting | Difficultly focusing, stressed easily, independent to a fault
 Sajana | Blue | Machine Learning, Programming, Backend | Big Picture thinker, Leadership skills | Curious, energetic, observant, Excellent communicator | Management skills| Difficultly focusing, stressed easily, independent to a fault
 
 *Strengths and weaknesses based on the Myers-Briggs personality types. 
