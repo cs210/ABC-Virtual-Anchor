@@ -1,0 +1,6 @@
+python_speech_features 
+numpy
+scipy
+numba
+pytorch
+tensorflow
