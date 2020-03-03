@@ -13,6 +13,8 @@ import tensorflow as tf
 from python_speech_features import mfcc #derives a spectral graph for the audio
 
 
+#Static helper functions for the AudioHandler Class
+
 def interpolate_features(features, input_rate, output_rate, output_len=None):
     num_features = features.shape[1]
     input_len = features.shape[0]
@@ -27,6 +29,20 @@ def interpolate_features(features, input_rate, output_rate, output_len=None):
                                              input_timestamps,
                                              features[:, feat])
     return output_features
+
+#Use this wrapper to process audio (need fewer params)
+def process_audio(ds_path, audio, sample_rate):
+    config = {}
+    config['deepspeech_graph_fname'] = ds_path
+    config['audio_feature_type'] = 'deepspeech'
+    config['num_audio_features'] = 29
+
+    config['audio_window_size'] = 16
+    config['audio_window_stride'] = 1
+
+    tmp_audio = {'subj': {'seq': {'audio': audio, 'sample_rate': sample_rate}}}
+    audio_handler = AudioHandler(config)
+    return audio_handler.process(tmp_audio)['subj']['seq']['audio']
 
 class AudioHandler:
     def __init__(self, config):
