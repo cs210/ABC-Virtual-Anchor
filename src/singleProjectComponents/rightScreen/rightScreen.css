@@ -1,0 +1,44 @@
+.flex-container-right{
+    flex-direction: column; 
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    width: 65.5%;
+   
+}
+
+.image {
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.right-sticky {
+   position: fixed;
+   right: 0;
+   width: 43%; 
+}
+
+.box{
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    background: #F5F5F5;
+    border-radius: 25px;
+    padding: 20px;
+    width: 535px;
+    height: 250px;
+    box-shadow: 10px 10px 5px #DCDCDC;
+}
+
+.play {
+    padding-top: 150px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+

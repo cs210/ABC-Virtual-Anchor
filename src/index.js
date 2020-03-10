@@ -11,7 +11,7 @@ const routing = (
   <Router>
     <div>
       <ul>
-        <li>
+        {/* <li>
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -19,7 +19,7 @@ const routing = (
         </li>
         <li>
         <Link to="/project">Project (eventually this button will be linked from Dashboard not home)</Link>
-        </li>
+        </li> */}
       </ul>
       <Route exact path="/" component={App} />
       <Route path="/Dashboard" component={Dashboard} />

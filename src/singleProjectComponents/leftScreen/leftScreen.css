@@ -1,0 +1,25 @@
+.left-container {
+    flex-flow: row wrap;
+    flex-direction: row; 
+    display: flex;
+    margin: 2px;
+    width: 75%;
+    text-align: justify;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #F5F5F5;
+    color: #383838;
+    font-family: 'Gill Sans';
+}
+
+
+h1 {
+    font-size: 45px;
+    font-weight: 500
+}
+
+.left-not-sticky{
+    margin-left: 80px;
+    width: 47.8%;
+}
