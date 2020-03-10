@@ -7,7 +7,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+top-bar {
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  align-items: center;
+}
+
+.top-bar > .selected {
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-bar > .unselected {
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #C5C5C5;
+  cursor: pointer;
+  text-decoration: none;
 }

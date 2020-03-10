@@ -6,21 +6,21 @@ import App from './App';
 import Dashboard from './dashboard';
 import Project from './project';
 import * as serviceWorker from './serviceWorker';
+import AnchorpersonLogo from './assets/anchorpersonLogo.png';
 
 const routing = (
+  // put the sticky stuff here
   <Router>
+    <div className = 'top-bar'>
+      <img src = {AnchorpersonLogo}/>
+      <Link to="/dashboard" className='selected'>
+        Projects
+      </Link>
+      <Link to="/dashboard" className='unselected'>
+        Drive
+      </Link>
+    </div>
     <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/dashboard">Dashboard</Link>
-        </li>
-        <li>
-        <Link to="/project">Project (eventually this button will be linked from Dashboard not home)</Link>
-        </li>
-      </ul>
       <Route exact path="/" component={App} />
       <Route path="/Dashboard" component={Dashboard} />
       <Route path="/project" component={Project} />
