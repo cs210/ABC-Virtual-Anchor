@@ -27,3 +27,6 @@ Sajana | Blue | Machine Learning, Programming, Backend | Big Picture thinker, Le
 
 # Resources
 1. See our [Google Drive](https://drive.google.com/drive/u/3/folders/0AAxRSFpxdcMlUk9PVA) for relevant documents.
+
+# Software Architecture Diagram
+![Software Architecture](https://github.com/cs210/ABC-Virtual-Anchor/blob/master/ARCHITECTURE.jpg)
