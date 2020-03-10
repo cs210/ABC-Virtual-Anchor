@@ -1,3 +1,7 @@
 backend/static_content/*.mp3
 backend/app/__pycache__/*
+backend/README.md
 *.pyc
+*.vscode
+*.mp3
+*.mp4

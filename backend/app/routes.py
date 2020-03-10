@@ -2,15 +2,23 @@ from app import app
 from flask import jsonify, request, send_from_directory
 from google.cloud import texttospeech
 
+
 import os
 import random #used to generate a random string for resource saving
 import string
+
+#video generation
+import subprocess
+import time
 
 simple_online_cache = {}
 
 @app.route('/tts/', methods = ['POST'])
 def tts():
-    return jsonify(synthesize_text(request.form.get('tts')))
+    response = {}
+    response["audio_uri"] = synthesize_text(request.form.get('tts'))
+    response["video_uri"] = generate_animation()
+    return jsonify(response)
 
 @app.route('/<path:path>')
 def send_js(path):
@@ -52,4 +60,31 @@ def synthesize_text(text):
 
     simple_online_cache[text] = file_name
 
-    return {"audio_uri" : file_name }
+    #return {"audio_uri" : file_name }
+    return file_name
+
+#For the moment we will generate a preanimated scene from blender
+def generate_animation():
+    file_name = "example.mp4"
+    vfile_name = os.path.join(os.path.dirname(__file__))
+    vfile_name +=  '/static_content/' + file_name
+
+    if (os.path.isfile(vfile_name)):
+        return file_name
+    tic = time.perf_counter()
+    #Only works with MACOs for the moment
+    blenderFile = "blender_files/pipes_after.blend"
+    blenderArgs = ["blender", "-b", blenderFile , "-o", "animation/temp",
+            "-E", "BLENDER_WORKBENCH", "-s", "0", "-e", "150", "-t", "2", "-a"]
+    blender_p = subprocess.Popen(blenderArgs)
+    blender_p.wait()
+    ffmpeg_args = ["ffmpeg", "-start_number", "000", "-pattern_type", 
+                "glob", "-i", "animation/*.jpg","-pix_fmt", "yuv420p", "-vcodec", "libx264", vfile_name]
+    ffmpeg_p = subprocess.Popen(ffmpeg_args)
+    ffmpeg_p.wait()
+    delete_temp = subprocess.Popen(["rm", "-r", "animation"])
+    delete_temp.wait()
+    toc = time.perf_counter()
+    print(f"Generating video took {toc - tic:0.4f} seconds")
+
+    return file_name
