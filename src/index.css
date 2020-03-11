@@ -35,3 +35,15 @@ top-bar {
   cursor: pointer;
   text-decoration: none;
 }
+
+left-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+right-bar {
+  display: flex;
+  flex-direction: column;
+}
