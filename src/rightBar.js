@@ -5,9 +5,8 @@ import Search from './assets/search.png';
 import Profile from './assets/profile.png';
 import ProjectTracker from './assets/projectTracker.png'
 import Notifications from './assets/notifications.png';
-import Mail from './assets/mail.png'
-import Arrow from './assets/arrow.png'
-
+import Mail from './assets/mail.png';
+import Arrow from './assets/arrow.png';
 
 class Invitation extends React.Component {
     render() {
@@ -30,7 +29,7 @@ class Invitation extends React.Component {
       );
     }
   }
-  
+
 
 class RightBar extends React.Component {
     render() {
@@ -39,10 +38,15 @@ class RightBar extends React.Component {
         <div style = {{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center',
+            alignItems: 'flex-end',
+            alignContent: 'space-between',
             padding: 10,
         }}>
-            <div> <img src = {Search} /> </div>
+            <div style = {{
+              marginLeft: 20,
+              marginRight: 20,
+            }}> <img src = {Search} />
+            </div>
             <div> <img src = {Notifications} /> </div>
         </div>
         <img src = {Profile} />

@@ -17,15 +17,15 @@ body {
 button {
   background: #6672FB 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: 19px;
+  border-radius: 29px;
   opacity: 1;
   text-align: center;
   font: Circular Std;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 0;
   color: #FFFFFF;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   margin-left: 600px;
 }
 .top-bar {
