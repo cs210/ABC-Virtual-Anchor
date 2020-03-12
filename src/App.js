@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <div>
         <nav>
-        <Redirect from="/" to="dashboard" />
+        <Redirect from="/" to="fs" />
         </nav>
       </div>
     )

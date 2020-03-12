@@ -16,8 +16,6 @@ class Project extends React.Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-
-
     handleScroll = () => {
         var header = document.getElementById("myHeader");
         var right = document.getElementById("right");

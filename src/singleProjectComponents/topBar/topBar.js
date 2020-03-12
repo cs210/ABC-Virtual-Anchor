@@ -22,7 +22,7 @@ class TopBar extends React.Component {
             <div class="header" id="myHeader">
             <div class = "flex-container1">
                 <div class = "arrow-wrapper">
-                    <Link to="/dashboard">
+                    <Link to="/fs/">
                         <IconContext.Provider value={{ className: "toggle", size: 30}}>
                             <div class="arrow"><IoIosArrowBack/></div>
                         </IconContext.Provider>
