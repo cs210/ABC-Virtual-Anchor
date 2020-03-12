@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
+
+//Pages
 import App from './App';
 import Dashboard from './dashboard';
 import Project from './project';
+import Drive from './drive';
+
+
 import SideBar from './sideBar';
 import * as serviceWorker from './serviceWorker';
 import AnchorpersonLogo from './assets/anchorpersonLogo.png';
@@ -54,7 +59,7 @@ const routing = (
           <Link to="/dashboard" className='selected'>
             Projects
           </Link>
-          <Link to="/" className='unselected'>
+          <Link to="/drive" className='unselected'>
             Drive
           </Link>
           <button>
@@ -63,7 +68,8 @@ const routing = (
         </div>
         <div>
           <Route exact path="/" component={App} />
-          <Route path="/Dashboard" component={Dashboard} />
+          <Route exact path="/drive" component={Drive} />
+          <Route path="/dashboard" component={Dashboard} />
           <Route path="/project" component={Project} />
         </div>
       </Router>
@@ -96,8 +102,8 @@ const routing = (
       <Invitation/>
     </div>
   </div>
-
 );
+
 
 ReactDOM.render(routing, document.getElementById('root'));
 
