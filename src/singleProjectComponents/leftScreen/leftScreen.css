@@ -3,10 +3,10 @@
     flex-direction: row; 
     display: flex;
     margin: 2px;
-    width: 75%;
+    width: 82%;
     text-align: justify;
-    padding-top: 25px;
-    padding-left: 20px;
+    padding-top: 50px;
+    padding-left: 15px;
     padding-right: 20px;
     background: #F5F5F5;
     color: #383838;
@@ -20,6 +20,7 @@ h1 {
 }
 
 .left-not-sticky{
-    margin-left: 80px;
-    width: 47.8%;
+    margin-left: 82px;
+
+    width: 48.6%;
 }
