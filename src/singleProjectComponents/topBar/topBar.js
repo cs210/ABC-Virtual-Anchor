@@ -38,7 +38,7 @@ class TopBar extends React.Component {
                 
                 <div class="flex-container">
                     <IconContext.Provider value={{ className: "toggle", size: 40}}>
-                        <Button> <FaToggleOn  /></Button>
+                        <Link> <FaToggleOn  /></Link>
                     </IconContext.Provider>
                     <div class="sub">Auto-Animate </div>
                 </div>

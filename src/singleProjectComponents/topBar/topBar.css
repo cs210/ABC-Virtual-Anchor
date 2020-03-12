@@ -1,6 +1,7 @@
 
 
 .header {
+    padding-left: 102px;
     overflow: hidden;  
     color: #383838;
     position: fixed; 
@@ -12,7 +13,7 @@
 }
 
 .sticky {
-    margin-left: 80px;
+
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -52,6 +53,7 @@
 }
 
 .flex-container {
+    
     text-align: right;
     flex-direction: column;
     padding-right: 30px;
@@ -67,6 +69,7 @@
 }
 
 .flex-container2 {
+    
     flex-direction: column;
     padding-right: 10px;
     display: flex;
@@ -89,6 +92,7 @@
 }
 
 .left-right {
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -100,10 +104,17 @@
 .item {
     display: flex;
     align-content: center;
+    flex-direction: row;
 }
 
 .with-nav{
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+.bottom {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
 }

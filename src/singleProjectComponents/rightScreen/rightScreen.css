@@ -2,9 +2,9 @@
     flex-direction: column; 
     display: flex;
     justify-content: center;
-  
+    padding-left: 70px;
     align-items: center;
-    width: 65.5%;
+    width: 50.5%;
    
 }
 
@@ -16,7 +16,7 @@
 .right-sticky {
    position: fixed;
    right: 0;
-   width: 43%; 
+   width: 45.7%; 
 }
 
 .box{
