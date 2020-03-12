@@ -54,7 +54,7 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className = "dashboard" style = {{
-        width: window.innerWidth,
+        width: 1050,
         height: window.innerHeight
       }}>
         <div style = {{
@@ -93,7 +93,6 @@ class Dashboard extends React.Component {
           <ProjectPreview/>
           <ProjectPreview/>
           <ProjectPreview/>
-          <ProjectPreview/>
           </div>
           <div style = {{
             display: 'flex',
@@ -104,7 +103,6 @@ class Dashboard extends React.Component {
           <ProjectPreview/>
           <ProjectPreview/>
           <ProjectPreview/>
-          <ProjectPreview/>
           </div>
           <div style = {{
             display: 'flex',
@@ -112,7 +110,6 @@ class Dashboard extends React.Component {
             justifyContent: 'space-between',
             alignItems: 'space-between',
           }}>
-          <ProjectPreview/>
           <ProjectPreview/>
           <ProjectPreview/>
           <ProjectPreview/>

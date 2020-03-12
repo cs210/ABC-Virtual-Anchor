@@ -1,6 +1,6 @@
 .project-box {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -52,9 +52,6 @@
 }
 
 .dashboard {
-  top: 83px;
-  left: 86px;
-  width: 1000px;
   background: #F7F9FB 0% 0% no-repeat padding-box;
   border-radius: 20px;
   opacity: 1;
