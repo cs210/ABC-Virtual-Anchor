@@ -1,0 +1,9 @@
+backend/app/static_content/*.mp3
+backend/app/static_content/ngrok_url.js
+backend/app/__pycache__/*
+backend/README.md
+*.pyc
+*.vscode
+*.mp3
+*.mp4
+node_modules/*

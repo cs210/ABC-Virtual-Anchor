@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text To Speech Example</h2>
+<script src="ngrok_url.js"></script>
+
+<textarea id="textArea" rows="4" cols="50">
+    All Hail King Cole, 
+    First of his name,
+    Long may he reign
+</textarea>
+<br>
+<button onClick="textToSpeech()"> Let's hear Google Assistant say this</button>
+<br>
+<video id="video" width="320" height="320" autoplay loop>
+    <source id="mp4" src="" type="video/mpeg4">
+</video>
+
+<script type="text/javascript">
+    function textToSpeech(){
+        let formData = new FormData();
+        formData.append("tts",document.getElementById("textArea").value )
+        const request = new Request(
+            ngrok_url + '/tts/', 
+            { 
+                method: 'POST',
+                body: formData
+            }
+        );
+
+        fetch(request)
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json()
+                } else {
+                    throw new Error('Could not get to Response Server');
+                }
+            })
+            .then((data) => {
+                audioURL = ngrok_url + '/' + data["audio_uri"]
+                videoURL = ngrok_url + '/' + data["video_uri"]
+                const audio = new Audio(audioURL);
+                audio.play();
+                video = document.getElementById("video")
+                video.setAttribute("src", videoURL);
+                var video = document.getElementById('video');
+                var source = document.getElementById('mp4');
+                video.pause();
+                source.setAttribute('src', videoURL);
+                video.load();
+                video.play();
+            });
+    }
+</script>
+</body>
+</html>
