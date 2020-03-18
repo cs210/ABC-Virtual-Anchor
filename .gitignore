@@ -1,7 +1,11 @@
 #backend gitignores
-backend/static_content/*.mp3
+backend/app/static_content/*.mp3
+backend/app/static_content/ngrok_url.js
 backend/app/__pycache__/*
 backend/README.md
+
+server/node_modules/*
+
 *.pyc
 *.vscode
 *.mp3
