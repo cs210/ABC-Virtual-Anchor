@@ -27,6 +27,7 @@ button {
   width: 150px;
   height: 40px;
   margin-left: 600px;
+  cursor: pointer;
 }
 .top-bar {
   display: flex;
@@ -62,6 +63,7 @@ button {
   justify-content: space-between;
   padding: 10px;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .right-bar {
@@ -78,4 +80,5 @@ button {
   border-radius: 9px;
   padding: 10px;
   margin:10px;
+  cursor: pointer;
 }

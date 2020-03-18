@@ -9,6 +9,7 @@
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 16px;
   opacity: 1;
+  cursor: pointer;
 }
 
 .project-box > h1 {
