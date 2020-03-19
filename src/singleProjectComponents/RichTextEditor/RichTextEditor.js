@@ -7,7 +7,7 @@ import { withHistory } from 'slate-history'
 import { Button, Icon, Toolbar } from './components'
 import './RichTextEditor.css';
 
-import {IoIosArrowBack} from "react-icons/io";
+import {IoIosArrowBack, IoIosHeadset} from "react-icons/io";
 import {FaToggleOn } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -31,6 +31,40 @@ const RichTextEditor = () => {
   const renderLeaf = useCallback(props => <Leaf {...props} />, [])
   const editor = useMemo(() => withHistory(withReact(createEditor())), [])
 
+  const editorChange = (value) => {
+    console.log(JSON.stringify(value));
+    setValue(value);
+  }
+
+
+  const textToSpeech = (text) => {
+    const ngrok_url = ""
+    let formData = new FormData();
+    formData.append("tts",text)
+    const request = new Request(
+        ngrok_url + '/tts/', 
+        { 
+            method: 'POST',
+            body: formData
+        }
+    );
+
+    fetch(request)
+        .then(response => {
+            if (response.status === 200) {
+                return response.json()
+            } else {
+                throw new Error('Could not get to Response Server');
+            }
+        })
+        .then((data) => {
+            const audioURL = ngrok_url + '/' + data["audio_uri"]
+            const videoURL = ngrok_url + '/' + data["video_uri"]
+            const audio = new Audio(audioURL);
+            audio.play();
+        });
+  }
+  
   return (
     <div 
       className={
@@ -49,7 +83,7 @@ const RichTextEditor = () => {
         `
       }
       id = "left">
-      <Slate editor={editor} value={value} onChange={value => setValue(value)}>
+      <Slate editor={editor} value={value} onChange={editorChange}>
         <div
           className= {
             css`
@@ -59,6 +93,13 @@ const RichTextEditor = () => {
             `
           }
         > 
+          <div class = "arrow-wrapper" onClick={(event) => {
+                textToSpeech(value)
+          }}>
+                  <IconContext.Provider value={{ className: "toggle", size: 30}}>
+                      <div class="arrow"><IoIosHeadset/></div>
+                  </IconContext.Provider>
+          </div>
           <div class = "arrow-wrapper">
               <Link to="/fs/">
                   <IconContext.Provider value={{ className: "toggle", size: 30}}>

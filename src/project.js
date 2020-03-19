@@ -51,7 +51,7 @@ class Project extends React.Component {
             width: 100vw;
            `
         }>
-          <RichTextEditor/>
+          <RichTextEditor callback={this.textToSpeech}/>
           <VideoPlayer/>
         </div>
       )
