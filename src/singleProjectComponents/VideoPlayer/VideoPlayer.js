@@ -1,0 +1,65 @@
+import React from 'react';
+import lilMiq from './lilMiq.png';
+import {FaPlay, FaPause } from "react-icons/fa";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { IoIosSkipBackward, IoIosSkipForward } from "react-icons/io";
+
+import { Line, Circle } from 'rc-progress';
+import './VideoPlayer.css';
+
+import {css} from 'emotion'
+import ReactPlayer from 'react-player'
+
+const lilMiqImg = () => {
+    return (
+        <img 
+        className= {
+            css`
+                width: 540px;
+                height: 360px;
+            `
+        }
+         src={lilMiq}/>
+    )
+} 
+
+class RightScreen extends React.Component {
+    
+    //This is largely a placeholder section
+    // Need to be expanded later
+    render() {
+        return (
+        <div 
+            className = {
+                css`
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                padding-top: 5%;
+                `
+            }
+        >    
+            <ReactPlayer 
+                light
+                playIcon={
+                    <img 
+                    className= {
+                        css`
+                            width: 540px;
+                            height: 360px;
+                        `
+                    }
+                     src={lilMiq}/>
+                }
+                url='https://www.youtube.com/watch?v=ysz5S6PUM-U' 
+                width= "540px"
+                className='react-player' 
+            />
+        </div>
+        );
+      }
+
+
+}
+
+export default RightScreen;

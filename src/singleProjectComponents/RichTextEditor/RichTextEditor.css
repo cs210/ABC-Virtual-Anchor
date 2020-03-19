@@ -1,9 +1,9 @@
 .left-container {
-    flex-flow: row wrap;
-    flex-direction: row; 
+    flex-direction: column;
+    align-items: flex-start;
     display: flex;
     margin: 2px;
-    width: 82%;
+    width: 50%;
     text-align: justify;
     padding-top: 50px;
     padding-left: 15px;
@@ -21,6 +21,13 @@ h1 {
 
 .left-not-sticky{
     margin-left: 82px;
-
     width: 48.6%;
+}
+
+.arrow-wrapper {
+    padding-right: 30px;
+    justify-content: right;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 5px;
 }

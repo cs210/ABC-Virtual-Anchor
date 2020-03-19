@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "emotion": "^10.0.27",
     "material-ui": "^1.0.0-beta.47",
     "prop-types": "^15.7.2",
     "radium": "^0.26.0",
@@ -21,11 +22,15 @@
     "react-native-progress": "^4.0.3",
     "react-native-progress-bar-animated": "^1.0.6",
     "react-native-switch-toggle": "^1.1.4",
+    "react-player": "^1.15.2",
     "react-player-controls": "^1.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-sticky": "^6.0.3",
     "react-window": "^1.8.5",
+    "slate": "^0.57.1",
+    "slate-history": "^0.57.1",
+    "slate-react": "^0.57.1",
     "toggle-switch-react-native": "^2.1.0"
   },
   "scripts": {

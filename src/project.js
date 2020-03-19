@@ -2,9 +2,9 @@ import React from 'react';
 
 import TopBar from './singleProjectComponents/topBar/topBar';
 import SideBar from './sideBar';
-import RightScreen from './singleProjectComponents/rightScreen/rightScreen';
-import LeftScreen from './singleProjectComponents/leftScreen/leftScreen';
-
+import VideoPlayer from './singleProjectComponents/VideoPlayer/VideoPlayer';
+import RichTextEditor from './singleProjectComponents/RichTextEditor/RichTextEditor';
+import {css } from 'emotion'
 
 
 class Project extends React.Component {
@@ -39,35 +39,22 @@ class Project extends React.Component {
             side.classList.remove("side-sticky");
         }
     }
-  render() {
-    return (
 
-      <div>
-        <div class = "with-nav">
-          <div class = "">
-            <div>
-              <TopBar/>
-            </div>
-          
-
-                <div class= "bottom">
-                <div class = "item">
-                    <SideBar/>
-                  </div>
-                <div class = "left-right">
-                  <div class = "item">
-                    <LeftScreen/>
-                  </div>
-                  <div class = "item">
-                    <RightScreen/>
-                  </div>
-                </div>
-                </div>
-            
-          </div>
+    render(){
+      return (
+        <div       
+        className={
+          css`
+            display: flexbox;
+            flex-direction: column;  
+            height: 100vh;
+            width: 100vw;
+           `
+        }>
+          <RichTextEditor/>
+          <VideoPlayer/>
         </div>
-     </div>
-    )
-  }
+      )
+    }
 }
 export default Project;
