@@ -1,0 +1,218 @@
+.modal {
+    width: 300px;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+     padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px; 
+    margin: 20px; 
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+    opacity: 1;
+    font-family: 'Gill Sans';
+}
+
+.left-justify-modal {
+    display: flex;
+    flex-direction: column;
+    
+}
+.back-wrapper {
+    padding-left: 95%;
+
+}
+
+
+.heading{
+    padding: 15px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.subheading {
+    padding: 15px;
+    padding-top: 7px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.astric {
+    padding-top: 10px;
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.subheading-wrapper {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-right: 20px;
+    font-family: 'Gill Sans';
+    padding-bottom: 10px;
+}
+
+.button-wrapper {
+    padding-top: 5px;
+    padding-left: 10px;  
+
+}
+
+form {
+    padding-top: 5px;
+    font-family: 'Gill Sans';
+    padding-left: 15px;
+}
+
+.create-wrapper {
+    padding: 15px;
+    justify-content: right;
+    font-family: 'Gill Sans';
+    padding-top: 30px;
+
+    padding-left: 45%;
+}
+
+.create {
+    font-family: 'Gill Sans';
+    font-size: 18px;
+    border-radius: 20px;
+    background: #00a0a0;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  
+}
+
+.add-wrapper {
+    padding-top: 5px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.one{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #ffcccc;
+    color: #ff0000;
+    border-color: #ffcccc;
+    cursor: pointer;
+}
+.two{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #ccccff;
+    color: #0000ff;
+    border-color: #ccccff;
+    cursor: pointer;
+}
+.three{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #c6ecc6;
+    color: #339933;
+    border-color: #c6ecc6;
+    cursor: pointer;
+}
+.four{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #fff2cc;
+    color: #cc9900;
+    border-color: #fff2cc;
+    cursor: pointer;
+}
+.five{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #ccfff2;
+    color: #00b386;
+    border-color: #ccfff2;
+    cursor: pointer;
+}
+.six{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #ffffb3;
+    color: #b3b300;
+    border-color: #ffffe6;
+    cursor: pointer;
+}
+.seven{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #e6ccff;
+    color: #6600cc;
+    border-color: #e6ccff;
+    cursor: pointer;
+}
+.eight{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #ffccff;
+    padding: 10px;
+    color: #cc00cc;
+    border-color: #ffccff;
+    cursor: pointer;
+}
+.nine{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #ffe6cc;
+    padding: 10px;
+    color: #cc6600;
+    border-color: #ffe6cc;
+    cursor: pointer;
+}
+.ten{
+    border-radius: 12px;
+    padding: 7px;
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #ffccff;
+    padding: 10px;
+    color: #990099;
+    border-color: #ffccff;
+    cursor: pointer;
+}
+

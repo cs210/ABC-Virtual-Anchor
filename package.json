@@ -17,6 +17,8 @@
     "react-dom": "^16.13.0",
     "react-dropdown": "^1.6.4",
     "react-icons": "^3.9.0",
+    "react-modal": "^3.11.2",
+    "react-native": "^0.61.5",
     "react-native-paper": "^3.6.0",
     "react-native-progress": "^4.0.3",
     "react-native-progress-bar-animated": "^1.0.6",

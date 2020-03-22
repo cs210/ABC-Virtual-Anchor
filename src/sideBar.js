@@ -11,20 +11,20 @@ class SideBar extends React.Component {
         return (
         <div className = 'left-bar'>
             <nav>
-            <div class="flex-container-sidebar" id="side">
-                    <div class="side-icons">
+            <div className="flex-container-sidebar" id="side">
+                    <div className="side-icons">
                         <img src = {AnchorpersonLogo}
                         value = {{}}
                     />
                     </div>
-                    <div class = "side-icons">
+                    <div className = "side-icons">
                         <img src = {Image12} alt="dots"
                         value = {{}}
                     />
                     </div>
                 </div>
-                <div class = "bottom-icon" id = "side">
-                    <div class = "side-icons">
+                <div className = "bottom-icon" id = "side">
+                    <div className = "side-icons">
                     <img src = {Trash} alt="activity"
                         value = {{}}
                         />

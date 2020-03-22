@@ -20,6 +20,7 @@ import * as serviceWorker from './serviceWorker';
 import AnchorpersonLogo from './assets/anchorpersonLogo.png';
 import Image12 from './assets/Image12.png';
 import Trash from './assets/trash.png';
+import MyModal from './modal';
 
 const Routing = () => {
   // put the sticky stuff here
@@ -30,6 +31,7 @@ const Routing = () => {
         <Route exact path="/" component={App} />
         <Route path="/fs" component={fileSystem} />
         <Route path="/project" component={Project} />
+        <Route path="/modal" component={MyModal} />
       </Switch>
     </Router>
   );
