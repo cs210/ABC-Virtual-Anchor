@@ -30,3 +30,6 @@ Sajana | Blue | Machine Learning, Programming, Backend | Big Picture thinker, Le
 
 # Software Architecture Diagram
 ![Software Architecture](https://github.com/cs210/ABC-Virtual-Anchor/blob/master/ARCHITECTURE.jpg)
+
+# Contract of Deliverables
+https://docs.google.com/document/d/1uEEru1uPQ7xsMkAkkFqVvYb5y5tA-LOepZutrCvihgM/edit?usp=sharing
