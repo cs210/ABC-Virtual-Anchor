@@ -13,7 +13,13 @@ class ProjectPreview extends React.Component {
     return (
       <div onClick={this.props.callback}>
         <div className = "project-box">
-          <h1> Democratic Primary </h1>
+          <div style = {{
+                marginTop: '0',
+                marginBottom: '0.5em',
+                color: 'rgba(0, 0, 0, 0.85)',
+                fontWeight: '500',
+                fontSize: '25px',
+          }}> Democratic Primary </div>
           <p> South Carolina, the last of the first four early states, votes today.
           We'll start seeing results shortly after polls close at 7 p.m. Eastern.</p>
           <div style = {{

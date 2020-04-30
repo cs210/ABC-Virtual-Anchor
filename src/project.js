@@ -1,10 +1,9 @@
 import React from 'react';
 
-import TopBar from './singleProjectComponents/topBar/topBar';
-import SideBar from './sideBar';
-import RightScreen from './singleProjectComponents/rightScreen/rightScreen';
-import LeftScreen from './singleProjectComponents/leftScreen/leftScreen';
 
+import ProjectSettingsBar from './singleProjectComponents/ProjectSettingsBar/ProjectSettingsBar';
+import RichTextEditor from './singleProjectComponents/RichTextEditor/RichTextEditor';
+import {css } from 'emotion'
 
 
 class Project extends React.Component {
@@ -16,58 +15,21 @@ class Project extends React.Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
 
-    handleScroll = () => {
-        var header = document.getElementById("myHeader");
-        var right = document.getElementById("right");
-        var left = document.getElementById("left");
-        var side =  document.getElementById("side");
-        if (header == null){
-          return;
-        } else {
-          var sticky = header.offsetTop;
-        }
-
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-            right.classList.add("right-sticky");
-            left.classList.add("left-not-sticky");
-            side.classList.add("side-sticky");
-        } else {
-            header.classList.remove("sticky");
-            right.classList.remove("right-sticky");
-            left.classList.remove("left-not-sticky");
-            side.classList.remove("side-sticky");
-        }
-    }
-  render() {
-    return (
-
-      <div>
-        <div class = "with-nav">
-          <div class = "">
-            <div>
-              <TopBar/>
-            </div>
-          
-
-                <div class= "bottom">
-                <div class = "item">
-                    <SideBar/>
-                  </div>
-                <div class = "left-right">
-                  <div class = "item">
-                    <LeftScreen/>
-                  </div>
-                  <div class = "item">
-                    <RightScreen/>
-                  </div>
-                </div>
-                </div>
-            
-          </div>
+    render(){
+      return (
+        <div       
+        className={
+          css`
+            display: flexbox;
+            flex-direction: column;  
+            height: 100vh;
+            width: 100vw;
+           `
+        }>
+          <RichTextEditor callback={this.textToSpeech}/>
+          <ProjectSettingsBar/>
         </div>
-     </div>
-    )
-  }
+      )
+    }
 }
 export default Project;

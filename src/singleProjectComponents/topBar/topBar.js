@@ -20,32 +20,25 @@ class TopBar extends React.Component {
         return (
         
             <div class="header" id="myHeader">
-            <div class = "flex-container1">
-                <div class = "arrow-wrapper">
-                    <Link to="/fs/">
-                        <IconContext.Provider value={{ className: "toggle", size: 30}}>
-                            <div class="arrow"><IoIosArrowBack/></div>
+                <div class = "flex-container1">
+                    <div class = "arrow-wrapper">
+                        <Link to="/fs/">
+                            <IconContext.Provider value={{ className: "toggle", size: 30}}>
+                                <div class="arrow"><IoIosArrowBack/></div>
+                            </IconContext.Provider>
+                        </Link>
+                    </div>
+                    <div class = "flex-container2">
+                        <div class="title">Corona Virus Outbreak (Draft)</div>
+                        <Link class="sub">Add to Folder </Link>
+                    </div>
+                    <div class="flex-container">
+                        <IconContext.Provider value={{ className: "toggle", size: 40}}>
+                            <Link> <FaToggleOn  /></Link>
                         </IconContext.Provider>
-                    </Link>
-                   
+                        <div class="sub">Auto-Animate </div>
+                    </div>
                 </div>
-                <div class = "flex-container2">
-                    <div class="title">Corona Virus Outbreak (Draft)</div>
-                    <Link class="sub">Add to Folder </Link>
-                </div>
-                
-               
-                
-                <div class="flex-container">
-                    <IconContext.Provider value={{ className: "toggle", size: 40}}>
-                        <Link> <FaToggleOn  /></Link>
-                    </IconContext.Provider>
-                    <div class="sub">Auto-Animate </div>
-                </div>
-                
-            </div>
-
-             
             </div>
          
         );
