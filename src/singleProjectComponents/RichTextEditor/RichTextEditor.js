@@ -83,7 +83,7 @@ const RichTextEditor = () => {
           style={{
             paddingLeft: '20px',
             paddingRight: '20px',
-            width: '95%'
+            width: '100%'
           }}
         >
         <DocumentMenuBar title={"Corona Virus"}/>
@@ -107,14 +107,14 @@ const RichTextEditor = () => {
             justifyContent: "center",
             width: "100%",
             height: "100%",
-            backgroundColor: '#f8f8f8',
+            backgroundColor: '#cecece',
             marginTop: '-30px'
           }}
         >
           <Editable
             className={
               css`
-                height: 95%;
+                height: 100%;
                 width: 80%;
                 padding: 20px;
                 background-color: #fbfbfb;
