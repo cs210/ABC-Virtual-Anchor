@@ -10,18 +10,6 @@ import './VideoPlayer.css';
 import {css} from 'emotion'
 import ReactPlayer from 'react-player'
 
-const lilMiqImg = () => {
-    return (
-        <img 
-        className= {
-            css`
-                width: 540px;
-                height: 360px;
-            `
-        }
-         src={lilMiq}/>
-    )
-} 
 
 class RightScreen extends React.Component {
     
@@ -32,7 +20,7 @@ class RightScreen extends React.Component {
         <div 
             className = {
                 css`
-                width: 50%;
+                width: 20%;
                 display: flex;
                 justify-content: center;
                 padding-top: 5%;

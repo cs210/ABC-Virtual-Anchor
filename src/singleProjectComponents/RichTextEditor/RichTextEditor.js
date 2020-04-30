@@ -7,14 +7,11 @@ import { withHistory } from 'slate-history'
 import { Button, Icon, Toolbar } from './components'
 import './RichTextEditor.css';
 
-import {IoIosArrowBack, IoIosHeadset} from "react-icons/io";
-import {FaToggleOn } from "react-icons/fa";
-import { IconContext } from "react-icons";
-
-
-import { Link } from 'react-router-dom';
-
 import {css} from 'emotion'
+
+import DocumentMenuBar from './documentMenuBar/documentMenuBar'
+
+
 
 const HOTKEYS = {
   'mod+b': 'bold',
@@ -22,6 +19,7 @@ const HOTKEYS = {
   'mod+u': 'underline',
   'mod+`': 'code',
 }
+
 
 const LIST_TYPES = ['numbered-list', 'bulleted-list']
 
@@ -72,11 +70,8 @@ const RichTextEditor = () => {
           flex-direction: column;
           align-items: flex-start;
           display: flex;
-          margin: 2px;
-          width: 50%;
+          width: 80%;
           text-align: justify;
-          padding-left: 20px;
-          padding-right: 20px;
           background: #F5F5F5;
           color: #383838;
           font-family: 'Gill Sans';
@@ -85,64 +80,62 @@ const RichTextEditor = () => {
       id = "left">
       <Slate editor={editor} value={value} onChange={editorChange}>
         <div
-          className= {
-            css`
-              display: flex;
-              justify-content:center;
-              width: 100%;
-            `
-          }
-        > 
-          <div class = "arrow-wrapper" onClick={(event) => {
-                textToSpeech(value)
-          }}>
-                  <IconContext.Provider value={{ className: "toggle", size: 30}}>
-                      <div class="arrow"><IoIosHeadset/></div>
-                  </IconContext.Provider>
-          </div>
-          <div class = "arrow-wrapper">
-              <Link to="/fs/">
-                  <IconContext.Provider value={{ className: "toggle", size: 30}}>
-                      <div class="arrow"><IoIosArrowBack/></div>
-                  </IconContext.Provider>
-              </Link>
-          </div>
-          <div>
-            <h2>Corona Virus</h2>
-          </div>
-        </div>
-        <Toolbar>
-          <MarkButton format="bold" icon="format_bold" />
-          <MarkButton format="italic" icon="format_italic" />
-          <MarkButton format="underline" icon="format_underlined" />
-          <MarkButton format="code" icon="code" />
-          <BlockButton format="heading-one" icon="looks_one" />
-          <BlockButton format="heading-two" icon="looks_two" />
-          <BlockButton format="block-quote" icon="format_quote" />
-          <BlockButton format="numbered-list" icon="format_list_numbered" />
-          <BlockButton format="bulleted-list" icon="format_list_bulleted" />
-        </Toolbar>
-        <Editable
-          className={
-            css`
-              height: 95%;
-            `
-          }
-          renderElement={renderElement}
-          renderLeaf={renderLeaf}
-          placeholder="Let's write out tonight's news"
-          spellCheck
-          autoFocus
-          onKeyDown={event => {
-            for (const hotkey in HOTKEYS) {
-              if (isHotkey(hotkey, event)) {
-                event.preventDefault()
-                const mark = HOTKEYS[hotkey]
-                toggleMark(editor, mark)
-              }
-            }
+          style={{
+            paddingLeft: '20px',
+            paddingRight: '20px',
+            width: '95%'
           }}
-        />
+        >
+        <DocumentMenuBar title={"Corona Virus"}/>
+          <Toolbar>
+            <MarkButton format="bold" icon="format_bold" />
+            <MarkButton format="italic" icon="format_italic" />
+            <MarkButton format="underline" icon="format_underlined" />
+            <MarkButton format="code" icon="code" />
+            <BlockButton format="heading-one" icon="looks_one" />
+            <BlockButton format="heading-two" icon="looks_two" />
+            <BlockButton format="block-quote" icon="format_quote" />
+            <BlockButton format="numbered-list" icon="format_list_numbered" />
+            <BlockButton format="bulleted-list" icon="format_list_bulleted" />
+          </Toolbar>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+            height: "100%",
+            backgroundColor: '#f8f8f8',
+            marginTop: '-30px'
+          }}
+        >
+          <Editable
+            className={
+              css`
+                height: 95%;
+                width: 80%;
+                padding: 20px;
+                background-color: #fbfbfb;
+                overflow: auto;
+              `
+            }
+            renderElement={renderElement}
+            renderLeaf={renderLeaf}
+            placeholder="Let's write out tonight's news"
+            spellCheck
+            autoFocus
+            onKeyDown={event => {
+              for (const hotkey in HOTKEYS) {
+                if (isHotkey(hotkey, event)) {
+                  event.preventDefault()
+                  const mark = HOTKEYS[hotkey]
+                  toggleMark(editor, mark)
+                }
+              }
+            }}
+          />
+        </div>
+
       </Slate>
     </div>
   )

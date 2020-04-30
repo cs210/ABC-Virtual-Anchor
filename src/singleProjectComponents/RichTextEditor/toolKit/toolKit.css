@@ -1,0 +1,13 @@
+.textEditorToolKit {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #202124;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: .2px;
+    padding: 4px 6px;
+}
+
+.textEditorToolKit:hover {
+    background-color: cornsilk;
+}
