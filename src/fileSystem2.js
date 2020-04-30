@@ -15,7 +15,10 @@ import TopBar from './topBar';
 
 import MyModal from './modal';
 
-class fileSystem extends React.Component {
+
+
+
+class fileSystem2 extends React.Component {
     render() {
       console.log(this.props.match)
       return (
@@ -27,14 +30,12 @@ class fileSystem extends React.Component {
               <div>
                   <TopBar />
                   <div>
-                    <Route exact path="/fs/" component={Dashboard} />
-                    <Route path="/fs/drive" component={Drive} />
-                    <Route path="/project" component={Project} />
+                        <Dashboard/>
                   </div>
               </div>
 
                 <div>
-                  <RightBar/>
+                  <MyModal/>
                 </div>
               
 
@@ -43,4 +44,4 @@ class fileSystem extends React.Component {
     }
   }
 
-  export default fileSystem;
+  export default fileSystem2;

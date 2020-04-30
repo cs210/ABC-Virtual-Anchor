@@ -11,6 +11,7 @@ import Drive from './drive';
 
 
 import fileSystem from './fileSystem';
+import fileSystem2 from './fileSystem2';
 //Nav bars
 import SideBar from './sideBar';
 import RightBar from './rightBar';
@@ -31,7 +32,9 @@ const Routing = () => {
         <Route exact path="/" component={App} />
         <Route path="/fs" component={fileSystem} />
         <Route path="/project" component={Project} />
+        <Route path="/rightBar" component={RightBar}/>
         <Route path="/modal" component={MyModal} />
+        <Route path="/fileSystem2" component={fileSystem2} />
       </Switch>
     </Router>
   );

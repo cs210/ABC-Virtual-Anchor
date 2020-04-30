@@ -1,6 +1,5 @@
 .modal {
-    width: 300px;
-    height: 675px;
+    
     display: flex;
     flex-direction: column;
      padding-left: 30px;

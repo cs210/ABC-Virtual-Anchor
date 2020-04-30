@@ -1,7 +1,7 @@
 import React from 'react';
-import Modal from 'react-modal';
 import {Link} from 'react-router-dom';
 import './index.css';
+import Modal from 'react-modal';
 
 
 const customStyles = {
@@ -19,17 +19,10 @@ class TopBar extends React.Component {
   constructor(props) {
     super(props);
     this.switchTab = this.switchTab.bind(this);
-    this.setModalVisible = this.setModalVisible.bind(this);
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
     this.state = {
       driveSelected: false,
       projectsSelected: true,
-      modalVisible: false,
-      modalIsOpen: false,
-      modalVisible: false
-
+     
     };
   }
   switchTab() {
@@ -39,40 +32,8 @@ class TopBar extends React.Component {
       this.setState({driveSelected: true, projectsSelected:false})
     }
   }
-  toggleModal = () => {
-    console.log("toggled")
-    console.log(this.state.modalVisible)
-    this.state.modalVisible
-      ? this.setState({
-        modalVisible: false
-      })
-      : this.setState({ modalVisible: true });
-  };
 
-  setModalVisible() {
-    if(this.state.modalVisible){
-        this.setState({modalVisible: false});
-    } else {
-        this.setState({modalVisible: true});
-    }
-    
-  }
 
-  openModal() {
-    console.log("opened")
-    this.setState({modalIsOpen:true});
-  }
- 
-   afterOpenModal() {
-
-  }
- 
-   closeModal(){
-
-    this.setState({modalIsOpen:false});;
-  }
-
-  
   
   render() {
     return (
@@ -85,36 +46,10 @@ class TopBar extends React.Component {
           onClick={this.switchTab}>
               Drive
           </Link>
-          <Link to="/modal"
-              onClick={() => this.toggleModal()}>
-              <button className= "button" onClick={() => this.toggleModal()}> Create File </button>
-              
-          </Link>
-          {/* <Modal modalVisible={this.state.modalVisible} /> */}
-        <div>
-            {/* <button onClick={() => this.openModal}>Open Modal</button>
-            <Modal
-              isOpen={this.modalIsOpen}
-              onAfterOpen={this.afterOpenModal}
-            
-              style={customStyles}
-              contentLabel="Example Modal"
-            >
-    
-              <h2 >Hello</h2>
-              <button onClick={this.closeModal}>close</button>
-              <div>I am a modal</div>
-              <form>
-                <input />
-                <button>tab navigation</button>
-                <button>stays</button>
-                <button>inside</button>
-                <button>the modal</button>
-              </form>
-            </Modal>
-            <div onClick={() => this.toggleModal()}>Contact Us</div>
-            <Modal modalVisible={true} /> */}
-      </div>   
+          <Link to="/fileSystem2">
+              <button className= "button" > Create File </button>             
+          </Link>  
+         
       </div>
     );
   }
