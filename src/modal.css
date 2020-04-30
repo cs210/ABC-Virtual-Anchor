@@ -1,6 +1,5 @@
 .modal {
-    width: 300px;
-    height: 675px;
+    width: 400px;
     display: flex;
     flex-direction: column;
      padding-left: 30px;
@@ -20,25 +19,25 @@
     flex-direction: column;
     
 }
-.back-wrapper {
+.modal-back-wrapper {
     padding-left: 95%;
 
 }
 
 
-.heading{
+.modal-heading{
     padding: 15px;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 16px;
 }
-.subheading {
+.modal-subheading {
     padding: 15px;
     padding-top: 7px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
 }
 
-.astric {
+.modal-astric {
     padding-top: 10px;
     color: red;
     font-weight: 600;
@@ -46,13 +45,13 @@
 
 }
 
-.subheading-wrapper {
+.modal-subheading-wrapper {
 
     display: flex;
     flex-direction: row;
 }
 
-.buttons {
+.modal-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,19 +62,19 @@
     padding-bottom: 10px;
 }
 
-.button-wrapper {
+.modal-button-wrapper {
     padding-top: 5px;
     padding-left: 10px;  
-
+    font-size: 12px;
 }
 
-form {
+.modal-form {
     padding-top: 5px;
     font-family: 'Gill Sans';
     padding-left: 15px;
 }
 
-.create-wrapper {
+.modal-create-wrapper {
     padding: 15px;
     justify-content: right;
     font-family: 'Gill Sans';
@@ -84,7 +83,7 @@ form {
     padding-left: 45%;
 }
 
-.create {
+.modal-create {
     font-family: 'Gill Sans';
     font-size: 18px;
     border-radius: 20px;
@@ -96,13 +95,13 @@ form {
   
 }
 
-.add-wrapper {
+.modal-add-wrapper {
     padding-top: 5px;
     padding-left: 15px;
     cursor: pointer;
 }
 
-.one{
+.modal-one{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -113,7 +112,7 @@ form {
     border-color: #ffcccc;
     cursor: pointer;
 }
-.two{
+.modal-two{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -124,7 +123,7 @@ form {
     border-color: #ccccff;
     cursor: pointer;
 }
-.three{
+.modal-three{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -135,7 +134,7 @@ form {
     border-color: #c6ecc6;
     cursor: pointer;
 }
-.four{
+.modal-four{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -146,7 +145,7 @@ form {
     border-color: #fff2cc;
     cursor: pointer;
 }
-.five{
+.modal-five{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -157,7 +156,7 @@ form {
     border-color: #ccfff2;
     cursor: pointer;
 }
-.six{
+.modal-six{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -168,7 +167,7 @@ form {
     border-color: #ffffe6;
     cursor: pointer;
 }
-.seven{
+.modal-seven{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -179,7 +178,7 @@ form {
     border-color: #e6ccff;
     cursor: pointer;
 }
-.eight{
+.modal-eight{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -191,7 +190,7 @@ form {
     border-color: #ffccff;
     cursor: pointer;
 }
-.nine{
+.modal-nine{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
@@ -203,7 +202,7 @@ form {
     border-color: #ffe6cc;
     cursor: pointer;
 }
-.ten{
+.modal-ten{
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';

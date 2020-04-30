@@ -97,6 +97,8 @@ const RichTextEditor = () => {
             <BlockButton format="block-quote" icon="format_quote" />
             <BlockButton format="numbered-list" icon="format_list_numbered" />
             <BlockButton format="bulleted-list" icon="format_list_bulleted" />
+            <MarkButton format="happy" icon="mood" />
+            <MarkButton format="sad" icon="mood_bad" />
           </Toolbar>
         </div>
         <div
@@ -207,6 +209,14 @@ const Leaf = ({ attributes, children, leaf }) => {
     children = <strong>{children}</strong>
   }
 
+  if (leaf.happy) {
+    children = <span style={{color:'#0080ff'}} >{children}</span>
+  }
+
+  if (leaf.sad) {
+    children = <span style={{color:'#9370DB'}} >{children}</span>
+  }
+
   if (leaf.code) {
     children = <code>{children}</code>
   }
@@ -263,6 +273,7 @@ const initialValue = [
       { text: ' better than a ' },
       { text: '<textarea>', code: true },
       { text: '!' },
+      { text: 'I am hungry', happy: true},
     ],
   },
   {

@@ -13,8 +13,6 @@ import ReactPlayer from 'react-player'
 
 class RightScreen extends React.Component {
     
-    //This is largely a placeholder section
-    // Need to be expanded later
     render() {
         return (
         <div 

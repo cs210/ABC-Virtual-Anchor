@@ -36,6 +36,7 @@ const DocumentMenuBar = (props) => {
             className= {
               css`
                 margin: 5px;
+                cursor: pointer;
               `
             }
             onClick={ ()=> {

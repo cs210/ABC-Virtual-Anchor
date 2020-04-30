@@ -1,8 +1,7 @@
 import React from 'react';
 
-import TopBar from './singleProjectComponents/topBar/topBar';
-import SideBar from './sideBar';
-import VideoPlayer from './singleProjectComponents/VideoPlayer/VideoPlayer';
+
+import ProjectSettingsBar from './singleProjectComponents/ProjectSettingsBar/ProjectSettingsBar';
 import RichTextEditor from './singleProjectComponents/RichTextEditor/RichTextEditor';
 import {css } from 'emotion'
 
@@ -28,7 +27,7 @@ class Project extends React.Component {
            `
         }>
           <RichTextEditor callback={this.textToSpeech}/>
-          
+          <ProjectSettingsBar/>
         </div>
       )
     }
