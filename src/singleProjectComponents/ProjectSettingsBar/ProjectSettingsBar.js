@@ -120,6 +120,47 @@ const ProjectSettingsBar = () => {
         );
     }
 
+    const render_button = (val) => {
+        return (
+            <div className={
+                css`
+                background: #6672FB 0% 0% no-repeat padding-box;
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: 29px;
+                opacity: 1;
+                text-align: center;
+                font: Circular Std;
+                font-size: 20px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+                width: 90%;
+                cursor: pointer;
+                height: 40px;
+            `
+            } onClick={() => {window.alert("Your script has been enqueued for rendering. When it has been completely rendered it will appear under rendered videos.");}}>{val}</div>
+        );
+    }
+
+    const video_links = (val) => {
+        return (
+            <div className={
+                css`
+                background: #F7F9FB 0% 0% no-repeat padding-box;
+                opacity: 1;
+                text-align: center;
+                font: Circular Std;
+                font-size: 12px;
+                letter-spacing: 0;
+                width: 90%;
+                cursor: pointer;
+                height: 40px;
+                margin-bottom: 20px;
+            `
+            }>{val}</div>
+        );
+    }
+
+
     const uneditable_attribute = (img, val, text) => {
         return (
             <div
@@ -131,19 +172,6 @@ const ProjectSettingsBar = () => {
                     `
                 }
             >
-                <div>
-                    <img 
-                    className={
-                        css` 
-                        width: 50px;
-                        height: 50px;
-                        border: solid;
-                        border-radius: 100%;
-                        margin: 0px 10px;
-                        `
-                    }
-                    src={img}/>
-                </div>
                 <div
                     className= {
                         css`
@@ -153,8 +181,29 @@ const ProjectSettingsBar = () => {
                         `
                     }
                 >
-                    <div>{val}</div>
-                    <div>{text}</div>
+                    <div
+                        className= {
+                        css`
+                            margin-bottom: 3px;
+                        `
+                        }
+                    >
+                    {val}</div>
+                    <div
+                        className= {
+                        css`
+                            border-left: solid #32a1ce;
+                        `
+                        }
+                    >
+                        <div
+                            className= {
+                            css`
+                                margin-left: 5px;
+                            `
+                            }
+                        >{text}</div>
+                    </div>
                 </div>
 
             </div>
@@ -165,13 +214,13 @@ const ProjectSettingsBar = () => {
     <div       
     className={
         css`
-        display: flexbox;
-        flex-direction: row;  
-        justify-content: center;
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-between;
         align-items: flex-start;
         height: 100%;
-        width: 100%;
-        background-color: #fbfbfb;
+        width: 20%;
+        background-color: #fff;
         `
     }>
         <div    
@@ -184,11 +233,57 @@ const ProjectSettingsBar = () => {
             width: 100%;
             `
         }>
+            <div
+                className={
+                    css`
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    width: 90%;
+                    border-bottom: 1px solid;
+                    padding: 5px;
+                    margin-bottom: 15px;
+                    `
+            }>Set</div>
             {editable_attribute(fieldToAnchorMapper[anchorKey], anchor_menu, JohnTravolta, "News Anchor")}
             {editable_attribute(fieldToSetMapper[setKey], set_menu, HollyWood, "Set Location")}
-            {uneditable_attribute(Camera, "Cameras", "2")}
-            {uneditable_attribute(FPS, "FPS", "60")}
-            
+            <div
+                className={
+                    css`
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    width: 80%;
+                    `
+            }>
+                {uneditable_attribute(Camera, "Cameras", "2")}
+                {uneditable_attribute(FPS, "FPS", "60")}
+            </div>
+        </div>
+        <div
+            className={
+                css`
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 15%;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                `
+        }>
+
+        <div
+            className={
+                css`
+                font-size: 0.75em;
+                font-weight: bold;
+                width: 90%;
+                border-bottom: 1px solid;
+                padding: 5px;
+                margin-bottom: 15px;
+                `
+        } alt={"When your video is rendered it will appear here"}>Rendered Videos</div>
+            {video_links("🎥 Corona Virus v0.001 May 16 2020")}
+            {render_button("Render Video")}
         </div>
     </div>
     )

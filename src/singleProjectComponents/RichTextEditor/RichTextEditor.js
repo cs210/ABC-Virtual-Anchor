@@ -10,6 +10,7 @@ import './RichTextEditor.css';
 import {css} from 'emotion'
 
 import DocumentMenuBar from './documentMenuBar/documentMenuBar'
+import Column from '../../../node_modules/rc-table/lib/sugar/Column';
 
 
 
@@ -72,9 +73,9 @@ const RichTextEditor = () => {
           display: flex;
           width: 80%;
           text-align: justify;
-          background: #F5F5F5;
+          background: #fff;
           color: #383838;
-          font-family: 'Gill Sans';
+          font-family: 'Courier';
         `
       }
       id = "left">
@@ -87,6 +88,18 @@ const RichTextEditor = () => {
           }}
         >
         <DocumentMenuBar title={"Corona Virus"}/>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            width: "100%",
+            height: "100%",
+            backgroundColor: '#fff',
+          }}
+        >
           <Toolbar>
             <MarkButton format="bold" icon="format_bold" />
             <MarkButton format="italic" icon="format_italic" />
@@ -100,24 +113,13 @@ const RichTextEditor = () => {
             <MarkButton format="happy" icon="mood" />
             <MarkButton format="sad" icon="mood_bad" />
           </Toolbar>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-            height: "100%",
-            backgroundColor: '#cecece',
-            marginTop: '-30px'
-          }}
-        >
           <Editable
             className={
               css`
                 height: 100%;
-                width: 80%;
+                width: 90%;
                 padding: 20px;
-                background-color: #fbfbfb;
+                background-color: #F7F9FB;
                 overflow: auto;
               `
             }

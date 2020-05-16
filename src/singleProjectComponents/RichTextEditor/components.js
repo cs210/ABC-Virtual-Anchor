@@ -16,8 +16,8 @@ export const Button = React.forwardRef(
               ? 'white'
               : '#aaa'
             : active
-            ? 'black'
-            : '#ccc'};
+            ? 'blue'
+            : 'black'};
         `
       )}
     />
@@ -134,12 +134,13 @@ export const Toolbar = React.forwardRef(({ className, ...props }, ref) => (
         display: flex;
         flex-direction: row;
         height: 5%;
-        width: 100%;
+        width: 90%;
         position: relative;
-        padding: 1px 18px 17px;
-        margin: 0 -20px;
+        padding: 18px 18px 17px;
         border-bottom: 2px solid #eee;
-        margin-bottom: 20px;
+        background-color: #F7F9FB;
+        border-radius: 20px 20px 0px 0px;
+        margin-top: 20px;
       `
     )}
   />
