@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import Dashboard from './dashboard';
 import Project from './project';
+import Studio from './studio';
 import Drive from './drive';
 
 
@@ -23,6 +24,8 @@ import Image12 from './assets/Image12.png';
 import Trash from './assets/trash.png';
 import MyModal from './modal';
 
+
+
 const Routing = () => {
   // put the sticky stuff here
 
@@ -35,6 +38,8 @@ const Routing = () => {
         <Route path="/rightBar" component={RightBar}/>
         <Route path="/modal" component={MyModal} />
         <Route path="/fileSystem2" component={fileSystem2} />
+        <Route path="/studio" component={Studio} />
+
       </Switch>
     </Router>
   );

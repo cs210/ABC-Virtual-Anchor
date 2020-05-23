@@ -9,11 +9,11 @@ import {css } from 'emotion'
 class Project extends React.Component {
 
   componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll, true);
-    }
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
     render(){
       return (

@@ -99,3 +99,12 @@ blockquote[dir='rtl'] {
   padding-right: 10px;
   border-right: 2px solid #ddd;
 }
+
+
+model-viewer {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 1000px;
+  background-color:black;
+}

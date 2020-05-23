@@ -139,7 +139,6 @@ const RichTextEditor = () => {
             }}
           />
         </div>
-
       </Slate>
     </div>
   )

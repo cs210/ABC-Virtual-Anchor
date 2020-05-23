@@ -7,6 +7,7 @@ import './index.css'; //TODO Check these
 import App from './App';
 import Dashboard from './dashboard';
 import Project from './project';
+import Studio from './studio';
 import Drive from './drive';
 //Nav bars
 import SideBar from './sideBar';

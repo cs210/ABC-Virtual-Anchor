@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "/",
   "dependencies": {
+    "@google/model-viewer": "^0.10.0",
     "@material-ui/core": "^4.9.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
@@ -36,6 +37,7 @@
     "slate": "^0.57.1",
     "slate-history": "^0.57.1",
     "slate-react": "^0.57.1",
+    "three": "^0.116.1",
     "toggle-switch-react-native": "^2.1.0"
   },
   "scripts": {

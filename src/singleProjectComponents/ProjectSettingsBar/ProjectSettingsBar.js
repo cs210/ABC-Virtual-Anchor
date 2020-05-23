@@ -11,6 +11,7 @@ import FPS from '../../assets/technology.svg';
 
 import { Button } from 'antd';
 
+
 const ProjectSettingsBar = () => {
     const [anchorKey, setAnchorKey]  = useState("0");
     const [setKey, setSetKey]  = useState("0");
@@ -201,6 +202,7 @@ const ProjectSettingsBar = () => {
                             css`
                                 margin-left: 5px;
                             `
+                            
                             }
                         >{text}</div>
                     </div>
@@ -285,6 +287,7 @@ const ProjectSettingsBar = () => {
             {video_links("🎥 Corona Virus v0.001 May 16 2020")}
             {render_button("Render Video")}
         </div>
+
     </div>
     )
 }
