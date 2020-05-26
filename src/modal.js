@@ -56,22 +56,22 @@ class MyModal extends React.Component {
         return (
             <div >
 
-                <div className = "modal-back-wrapper">
-                    <Link to="/fs"  className= "">
-                        <IconContext.Provider value={{size: 30, color: 'gray'}}>
-                            <IoIosClose/>
-                        </IconContext.Provider>
-                    </Link>
-                </div>
                 <div className = "left-justify-modal">
+                    <div className = "modal-back-wrapper">
+                        <Link to="/fs" >
+                            <IconContext.Provider value={{size: 40, color: 'gray'}}>
+                                <IoIosClose/>
+                            </IconContext.Provider>
+                        </Link>
+                    </div>
                     <div className = 'modal-heading'>Create A New Project</div>
                     <div className = 'modal-subheading-wrapper'>
                         <div className = 'modal-subheading'>Project Name</div>
                         <div className = 'modal-astric'>    *    </div>
                     </div>
                     <form onSubmit={this.handleSubmit}>
-                        <label>
-                        <textarea value={this.state.projectName} onChange={this.handleChange} cols = '37' rows = '2'/>
+                        <label className='modal-form'>
+                        <textarea value={this.state.projectName} onChange={this.handleChange} cols = '52' rows = '2'/>
                         </label>
                         
                     </form>
@@ -83,13 +83,13 @@ class MyModal extends React.Component {
                     </div>
                     <div className = 'modal-subheading'>Choose Project Type</div>
                     <div className = 'modal-buttons'>
-                        <div className = "button-wrapper">
+                        <div className = "modal-button-wrapper">
                             <button className= "modal-one"> Breaking News </button>
                         </div>
                         <div className = "modal-button-wrapper">
                             <button className= "modal-two"> International </button>
                         </div>
-                        <div className = "button-wrapper">
+                        <div className = "modal-button-wrapper">
                             <button className= "modal-three"> Business </button>
                         </div>
                         <div className = "modal-button-wrapper">
@@ -122,17 +122,22 @@ class MyModal extends React.Component {
                     <form className={"modal-form"} onSubmit={this.handleSubmit}>
                         <label>
                         <textarea 
-                            style={{height: '30px'}}
-                            value={this.state.description} onChange={this.handleChange} cols = '37' rows = '6' />
+                            style={{height: '100px'}}
+                            value={this.state.description} onChange={this.handleChange} cols = '52' rows = '6' />
                         </label>
                         
                     </form>
+
+                    <div className = "modal-button-wrapper">
+                            <Link to='/project'>
+                                <button className= "modal-make-project"> Create Project </button>
+                            </Link>
+                    </div>
                 </div>
                 
                
             
-                <Invitation/>
-                <Invitation/>
+             
 
             </div>
 

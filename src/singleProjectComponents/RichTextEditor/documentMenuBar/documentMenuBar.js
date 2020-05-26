@@ -4,7 +4,8 @@ import {css} from 'emotion'
 
 import ToolKit from '../toolKit/toolKit'
 import DocIcon from '../../../assets/doc_orange.svg';
-
+import AnchorpersonLogo from '../../../assets/anchorpersonLogo.png';
+import BackArrow from '../../../assets/back.png';
 {/* <div className = "arrow-wrapper" onClick={(event) => {
   textToSpeech(value)
 }}>
@@ -35,7 +36,7 @@ const DocumentMenuBar = (props) => {
           <div
             className= {
               css`
-                margin: 5px;
+                margin: 20px;
                 cursor: pointer;
               `
             }
@@ -43,7 +44,7 @@ const DocumentMenuBar = (props) => {
                 history.replace("/fs/");
              }}
           >
-            <img src={DocIcon}/>
+            <img src = {BackArrow}></img>
           </div>
           <div          
             className= {

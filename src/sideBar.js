@@ -17,19 +17,19 @@ class SideBar extends React.Component {
                         value = {{}}
                     />
                     </div>
-                    <div className = "side-icons">
+                    {/* <div className = "side-icons">
                         <img src = {Image12} alt="dots"
                         value = {{}}
                     />
-                    </div>
+                    </div> */}
                 </div>
-                <div className = "bottom-icon" id = "side">
+                {/* <div className = "bottom-icon" id = "side">
                     <div className = "side-icons">
                     <img src = {Trash} alt="activity"
                         value = {{}}
                         />
                     </div>
-                </div>
+                </div> */}
             </nav>
         </div>
         );

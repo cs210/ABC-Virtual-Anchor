@@ -20,25 +20,27 @@
     
 }
 .modal-back-wrapper {
-    padding-left: 95%;
-
+    padding-top: 50px;
+    padding-left: 80%;
 }
 
 
 .modal-heading{
-    padding: 15px;
+
+    padding-left: 40px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 26px;
 }
 .modal-subheading {
-    padding: 15px;
+    padding-left: 42px;
     padding-top: 7px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .modal-astric {
-    padding-top: 10px;
+    
+    padding-top: 5px;
     color: red;
     font-weight: 600;
     font-size: 20px;
@@ -57,21 +59,24 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 5px;
-    padding-right: 20px;
+    padding-right: 175px;
     font-family: 'Gill Sans';
     padding-bottom: 10px;
+    padding-left: 30px;
 }
 
 .modal-button-wrapper {
     padding-top: 5px;
     padding-left: 10px;  
-    font-size: 12px;
+ 
 }
 
+
 .modal-form {
-    padding-top: 5px;
+    padding-top: 8px;
     font-family: 'Gill Sans';
-    padding-left: 15px;
+    font-size: 16px;
+    padding-left: 40px;
 }
 
 .modal-create-wrapper {
@@ -79,13 +84,12 @@
     justify-content: right;
     font-family: 'Gill Sans';
     padding-top: 30px;
-
     padding-left: 45%;
 }
 
 .modal-create {
     font-family: 'Gill Sans';
-    font-size: 18px;
+  
     border-radius: 20px;
     background: #00a0a0;
     padding: 10px;
@@ -97,7 +101,7 @@
 
 .modal-add-wrapper {
     padding-top: 5px;
-    padding-left: 15px;
+    padding-left: 40px;
     cursor: pointer;
 }
 
@@ -105,7 +109,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #ffcccc;
     color: #ff0000;
@@ -116,7 +120,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #ccccff;
     color: #0000ff;
@@ -127,7 +131,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #c6ecc6;
     color: #339933;
@@ -138,7 +142,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #fff2cc;
     color: #cc9900;
@@ -149,7 +153,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     background-color: #ccfff2;
     color: #00b386;
@@ -160,7 +164,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #ffffb3;
     color: #b3b300;
@@ -171,7 +175,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     background-color: #e6ccff;
     color: #6600cc;
@@ -182,7 +186,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     background-color: #ffccff;
     padding: 10px;
@@ -194,7 +198,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     background-color: #ffe6cc;
     padding: 10px;
@@ -206,7 +210,7 @@
     border-radius: 12px;
     padding: 7px;
     font-family: 'Gill Sans';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     background-color: #ffccff;
     padding: 10px;
@@ -215,3 +219,19 @@
     cursor: pointer;
 }
 
+.modal-make-project{
+    background: #6672FB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 29px;
+    opacity: 1;
+    text-align: center;
+    font: Circular Std;
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    margin-left: 400px;
+    margin-top: 20px;
+    cursor: pointer;
+}
