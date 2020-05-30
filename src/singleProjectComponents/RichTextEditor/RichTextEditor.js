@@ -71,7 +71,7 @@ const RichTextEditor = () => {
           flex-direction: column;
           align-items: flex-start;
           display: flex;
-          width: 80%;
+          width: 75%;
           text-align: justify;
           background: #fff;
           color: #383838;
@@ -117,7 +117,7 @@ const RichTextEditor = () => {
             className={
               css`
                 height: 100%;
-                width: 90%;
+                width: 97%;
                 padding: 20px;
                 background-color: #F7F9FB;
                 overflow: auto;

@@ -28,31 +28,18 @@ const DocumentMenuBar = (props) => {
           className= {
             css`
               display: flex;
-              justify-content:flex-start;
+              justify-content:center;
               width: 100%;
             `
           }
-        > 
-          <div
-            className= {
-              css`
-                margin: 20px;
-                cursor: pointer;
-              `
-            }
-            onClick={ ()=> {
-                history.replace("/fs/");
-             }}
-          >
-            <img src = {BackArrow}></img>
-          </div>
+        >
           <div          
             className= {
               css`
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                width: 100%;
+                width: 97%;
               `
             }
           >

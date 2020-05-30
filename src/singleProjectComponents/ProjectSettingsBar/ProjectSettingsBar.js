@@ -1,4 +1,5 @@
 import React, { useState }  from 'react';
+import {useHistory} from 'react-router-dom';
 import {css } from 'emotion';
 
 import { Menu, Dropdown } from 'antd';
@@ -10,9 +11,10 @@ import Camera from '../../assets/camera.svg';
 import FPS from '../../assets/technology.svg';
 
 import { Button } from 'antd';
-
+import {Icon} from '../RichTextEditor/components'
 
 const ProjectSettingsBar = () => {
+    const history = useHistory();
     const [anchorKey, setAnchorKey]  = useState("0");
     const [setKey, setSetKey]  = useState("0");
 
@@ -244,8 +246,22 @@ const ProjectSettingsBar = () => {
                     border-bottom: 1px solid;
                     padding: 5px;
                     margin-bottom: 15px;
+                    cursor: pointer;
                     `
-            }>Set</div>
+                }
+                onClick={ ()=> {
+                    history.replace("/studio/");
+                 }}
+            >Set 
+                <span
+                    className={
+                        css`
+                        
+                        margin-left: 7px;
+                        `
+                    }
+                ><Icon>create</Icon></span>
+            </div>
             {editable_attribute(fieldToAnchorMapper[anchorKey], anchor_menu, JohnTravolta, "News Anchor")}
             {editable_attribute(fieldToSetMapper[setKey], set_menu, HollyWood, "Set Location")}
             <div

@@ -134,7 +134,7 @@ export const Toolbar = React.forwardRef(({ className, ...props }, ref) => (
         display: flex;
         flex-direction: row;
         height: 5%;
-        width: 90%;
+        width: 97%;
         position: relative;
         padding: 18px 18px 17px;
         border-bottom: 2px solid #eee;

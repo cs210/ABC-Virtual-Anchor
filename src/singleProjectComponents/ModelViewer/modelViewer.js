@@ -4,6 +4,7 @@ import {css } from 'emotion';
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import cartoonManV2 from '../../assets/cartoonManV2.glb'
+import TVStudio from '../../assets/TVStudio.glb'
 
 
 class ModelViewer extends React.Component {
@@ -45,7 +46,7 @@ class ModelViewer extends React.Component {
         scene.add( cube );
 
         const gltfLoader = new GLTFLoader()
-        gltfLoader.load(cartoonManV2, (gltf) => {
+        gltfLoader.load(TVStudio, (gltf) => {
             this.model = gltf.scene;				
     
 

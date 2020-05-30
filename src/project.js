@@ -2,6 +2,7 @@ import React from 'react';
 
 
 import ProjectSettingsBar from './singleProjectComponents/ProjectSettingsBar/ProjectSettingsBar';
+import EditorsNavigationBar from './singleProjectComponents/EditorsNavigationBar/editorsNavigationBar';
 import RichTextEditor from './singleProjectComponents/RichTextEditor/RichTextEditor';
 import {css } from 'emotion'
 
@@ -26,6 +27,7 @@ class Project extends React.Component {
             width: 100vw;
            `
         }>
+          <EditorsNavigationBar/>
           <RichTextEditor callback={this.textToSpeech}/>
           <ProjectSettingsBar/>
         </div>
