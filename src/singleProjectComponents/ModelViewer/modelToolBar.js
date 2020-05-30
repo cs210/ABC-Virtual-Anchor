@@ -229,7 +229,6 @@ const ModelToolBar = (props) => {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                height: 45%;
                 width: 100%;
                 `
             }>

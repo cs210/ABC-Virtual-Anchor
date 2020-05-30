@@ -10,7 +10,7 @@ const EditorsNavigationBar = (props) => {
         className= {
           css`
             width: 5%;
-            margin-top: 20px;
+            margin-top: 30px;
             display: flex;
             justify-content: center;
           `
@@ -24,7 +24,7 @@ const EditorsNavigationBar = (props) => {
                 `
             }
             onClick={ ()=> {
-            history.replace("/fs/");
+            history.replace(props.url);
          }}>
             <img src = {BackArrow}></img>
         </div>

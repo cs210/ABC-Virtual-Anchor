@@ -47,7 +47,7 @@ const DocumentMenuBar = (props) => {
               fontSize: '2em',
               fontWeight: 'bold',
               marginLeft: '6px',
-              marginTop: '10px',
+              marginTop: '25px',
               fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
             }}>{props.title}</div>
             <ToolKit/>

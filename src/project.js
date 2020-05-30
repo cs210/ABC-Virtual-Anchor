@@ -27,7 +27,7 @@ class Project extends React.Component {
             width: 100vw;
            `
         }>
-          <EditorsNavigationBar/>
+          <EditorsNavigationBar url={"/fs/"}/>
           <RichTextEditor callback={this.textToSpeech}/>
           <ProjectSettingsBar/>
         </div>
