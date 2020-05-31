@@ -18,37 +18,26 @@ const ModelToolBar = (props) => {
         'set' : setSetKey
     }
 
-    const fieldToAnchorMapper = {
-        '0' : "John Travolta",
-        '1' : "Uma Thurman",
-        '2' : "Samuel L. Jackson",
-        '3' : "Quentin Tarantino",
-    }; 
-
-    const fieldToSetMapper = {
-        '0' : "New York, New York",
-        '1' : "Hollywood Boulevard",
-        '2' : "Asteroid Belt",
-    }; 
 
     const handleClick = (id, e) => {
         idToStateMapper[id](e.key)    
+        props.setSkybox(e.key)
     }
     const anchor_menu = () => {
         return (
             <Menu onClick={(e) => {handleClick('anchor', e)}}>
                 <Menu.Item key="0">
-                    {fieldToAnchorMapper['0']}
+                    {props.fieldToAnchorMapper['0']}
                 </Menu.Item>
-                <Menu.Item key="1">
-                    {fieldToAnchorMapper['1']}
+                <Menu.Item key="1" disabled>
+                    {props.fieldToAnchorMapper['1']}
                 </Menu.Item>
-                <Menu.Item key="2">
-                    {fieldToAnchorMapper['2']}
+                <Menu.Item key="2" disabled>
+                    {props.fieldToAnchorMapper['2']}
                 </Menu.Item>
                 <Menu.Divider />
                 <Menu.Item key="3" disabled>
-                    {fieldToAnchorMapper['3']}
+                    {props.fieldToAnchorMapper['3']}
                 </Menu.Item>
             </Menu>
         );
@@ -57,17 +46,17 @@ const ModelToolBar = (props) => {
         return (
             <Menu onClick={(e) => {handleClick('set', e)}}>
                 <Menu.Item key="0">
-                    {fieldToSetMapper['0']}
+                    {props.fieldToSetMapper['0']}
                 </Menu.Item>
                 <Menu.Item key="1">
-                    {fieldToSetMapper['1']}
+                    {props.fieldToSetMapper['1']}
                 </Menu.Item>
                 <Menu.Item key="2">
-                    {fieldToSetMapper['2']}
+                    {props.fieldToSetMapper['2']}
                 </Menu.Item>
                 <Menu.Divider />
                 <Menu.Item key="3" disabled>
-                    {fieldToSetMapper['3']}
+                    {props.fieldToSetMapper['3']}
                 </Menu.Item>
             </Menu>
         );
@@ -117,47 +106,6 @@ const ModelToolBar = (props) => {
             </div>
         );
     }
-
-    const render_button = (val) => {
-        return (
-            <div className={
-                css`
-                background: #6672FB 0% 0% no-repeat padding-box;
-                box-shadow: 0px 3px 6px #00000029;
-                border-radius: 29px;
-                opacity: 1;
-                text-align: center;
-                font: Circular Std;
-                font-size: 20px;
-                letter-spacing: 0;
-                color: #FFFFFF;
-                width: 90%;
-                cursor: pointer;
-                height: 40px;
-            `
-            } onClick={() => {window.alert("Your script has been enqueued for rendering. When it has been completely rendered it will appear under rendered videos.");}}>{val}</div>
-        );
-    }
-
-    const video_links = (val) => {
-        return (
-            <div className={
-                css`
-                background: #F7F9FB 0% 0% no-repeat padding-box;
-                opacity: 1;
-                text-align: center;
-                font: Circular Std;
-                font-size: 12px;
-                letter-spacing: 0;
-                width: 90%;
-                cursor: pointer;
-                height: 40px;
-                margin-bottom: 20px;
-            `
-            }>{val}</div>
-        );
-    }
-
 
     const uneditable_attribute = (img, val, text) => {
         return (
@@ -243,8 +191,8 @@ const ModelToolBar = (props) => {
                         margin-bottom: 15px;
                         `
                 }>Set</div>
-                {editable_attribute(fieldToAnchorMapper[anchorKey], anchor_menu, JohnTravolta, "News Anchor")}
-                {editable_attribute(fieldToSetMapper[setKey], set_menu, HollyWood, "Set Location")}
+                {editable_attribute(props.fieldToAnchorMapper[anchorKey], anchor_menu, JohnTravolta, "News Anchor")}
+                {editable_attribute(props.fieldToSetMapper[setKey], set_menu, HollyWood, "Set Location")}
                 <div
                     className={
                         css`

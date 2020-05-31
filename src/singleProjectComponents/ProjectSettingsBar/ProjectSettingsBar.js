@@ -23,17 +23,17 @@ const ProjectSettingsBar = () => {
         'set' : setSetKey
     }
 
+    const fieldToSetMapper = {
+        '0' : "Dusk",
+        '1' : "Starry Night",
+        '2' : "Janet's Void",
+    }; 
+
     const fieldToAnchorMapper = {
         '0' : "John Travolta",
         '1' : "Uma Thurman",
         '2' : "Samuel L. Jackson",
         '3' : "Quentin Tarantino",
-    }; 
-
-    const fieldToSetMapper = {
-        '0' : "New York, New York",
-        '1' : "Hollywood Boulevard",
-        '2' : "Asteroid Belt",
     }; 
 
     const handleClick = (id, e) => {
@@ -42,13 +42,13 @@ const ProjectSettingsBar = () => {
     const anchor_menu = () => {
         return (
             <Menu onClick={(e) => {handleClick('anchor', e)}}>
-                <Menu.Item key="0">
+                <Menu.Item key="0" >
                     {fieldToAnchorMapper['0']}
                 </Menu.Item>
-                <Menu.Item key="1">
+                <Menu.Item key="1" disabled>
                     {fieldToAnchorMapper['1']}
                 </Menu.Item>
-                <Menu.Item key="2">
+                <Menu.Item key="2" disabled>
                     {fieldToAnchorMapper['2']}
                 </Menu.Item>
                 <Menu.Divider />
