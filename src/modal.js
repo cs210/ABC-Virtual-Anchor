@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import {Link} from 'react-router-dom';
 import './modal.css';
-import { IoIosAddCircleOutline, IoIosClose } from "react-icons/io";
+import { IoIosAddCircleOutline, IoIosClose, IoIosFolder } from "react-icons/io";
 import { IconContext } from "react-icons";
 import Mail from './assets/mail.png';
 import Arrow from './assets/arrow.png';

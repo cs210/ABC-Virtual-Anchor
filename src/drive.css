@@ -1,0 +1,85 @@
+.drive{
+    background-color: #F7F9FB;
+    border-radius: 20px;
+}
+
+.drive-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+.drop-down > p {
+    text-align: left;
+    font: Book 11px/14px Circular Std;
+    letter-spacing: 0;
+    color: #6C6C6C;
+    opacity: 1;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .project-box-1 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .project-box-2 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background: #2575d0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .project-box-3 {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background: #e6c90f 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .drive-folder-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .drive-heading{
+      padding-left: 45px;
+      font-size: 32px;
+      font: sans-serif;
+      font-weight: bolder;
+
+  }
+
+  .files-box {
+    background: #ffffff;
+    width: auto;
+    height: 20;
+    border-radius: 9px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    filter:drop-shadow(3px 3px 3px #D3D3D3);
+  } 
